@@ -7,29 +7,33 @@ import { AnimatedSection } from "./animated-section"
 export function ProjectsSection() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration.",
-      image: "/placeholder.svg?height=200&width=400",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
+      title: "Zainspot - E-commerce",
+      description: "Developed ZainSpot, a global e-commerce platform offering virtual office solutions to help businesses expand internationally, with a focus on accessibility, affordability, and support for emerging economies.",
+      image: "/zainspot.png?height=200&width=400",
+      tags: ["NextJs", "NestJs", "TypeORM", "Mysql", "Stripe", "AWS", "Netlify", "Vercel"],
+      liveUrl: "https://www.zainspot.com/",
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management tool with real-time updates and team features.",
-      image: "/placeholder.svg?height=200&width=400",
-      tags: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
-      liveUrl: "#",
-      githubUrl: "#",
+      title: "Retain Health - Alzheimer's Prevention Platform",
+      description: "Contributed to the development of a personalized web app that promotes brain health by guiding users to build better habits and reduce Alzheimer’s risk through small, impactful behavior changes.",
+      image: "/retain-health.png?height=200&width=400",
+      tags: ["Angular", "Node.js", "ExpressJs", "Mysql", "Stripe", "AWS", "Netlify"],
+      liveUrl: "https://retainhealth.com/",
     },
     {
-      title: "Weather Dashboard",
-      description: "A beautiful weather application with location-based forecasts and analytics.",
-      image: "/placeholder.svg?height=200&width=400",
-      tags: ["React", "API Integration", "Charts.js"],
-      liveUrl: "#",
-      githubUrl: "#",
+      title: "Menu Qube",
+      description: "Helped build a web application for restaurants to display menus via QR codes, manage orders, and update menu items—enhancing efficiency, boosting sales, and streamlining the dining experience with no app downloads required.",
+      image: "/menu-cube.png?height=200&width=400",
+      tags: ["React", "NextJs", "ExpressJs", "MongoDB", "Charts.js"],
+      liveUrl: "https://www.menuqube.tn/",
     },
+    {
+      title: "Real Estate Price Estimation",
+      description: "Helped build a web application for restaurants to display menus via QR codes, manage orders, and update menu items—enhancing efficiency, boosting sales, and streamlining the dining experience with no app downloads required.",
+      image: "/real-estate.png?height=200&width=400",
+      tags: ["NextJs", "ExpressJs", "Groq", "MySql"],
+    },
+    
   ]
 
   return (
@@ -76,22 +80,22 @@ export function ProjectsSection() {
                     ))}
                   </div>
                   <div className="flex space-x-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="border-gray-600 text-gray-300 hover:bg-gray-700 bg-transparent hover:border-blue-400 hover:text-blue-400 transform hover:scale-105 transition-all duration-300"
-                    >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
-                    </Button>
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="border-gray-600 text-gray-300 hover:bg-gray-700 bg-transparent hover:border-purple-400 hover:text-purple-400 transform hover:scale-105 transition-all duration-300"
-                    >
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </Button>
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          className="border-gray-600 text-gray-300 hover:bg-gray-700 bg-transparent hover:border-blue-400 hover:text-blue-400 transform hover:scale-105 transition-all duration-300"
+                        >
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          Live Demo
+                        </Button>
+                      </a>
+                    )}
                   </div>
                 </CardContent>
               </Card>

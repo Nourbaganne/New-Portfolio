@@ -58,9 +58,11 @@ export function Navigation() {
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 animate-pulse-slow">
-              Let's Talk!
-            </Button>
+            <a href="#contact" className="inline-block">
+              <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 animate-pulse-slow">
+                Let's Talk!
+              </Button>
+            </a>
           </div>
 
           <div className="md:hidden">
