@@ -28,11 +28,18 @@ export function ProjectsSection() {
       liveUrl: "https://www.menuqube.tn/",
     },
     {
+      title: "Esports LFG Post Board | Next.js & Supabase Real-Time App",
+      description: "Built a fast, responsive personal portfolio using Next.js, Tailwind CSS, and Framer Motion. Showcases my skills and projects with smooth animations and a clean design. Deployed on Vercel for optimal performance across devices.",
+      image: "/lgp-esports.png?height=200&width=400",
+      tags: ["NextJs", "Supabase", "Git", "Vercel"],
+      liveUrl: "https://esport-post-board.vercel.app/",
+    },
+    {
       title: "Real Estate Price Estimation",
       description: "Helped build a web application for restaurants to display menus via QR codes, manage orders, and update menu items—enhancing efficiency, boosting sales, and streamlining the dining experience with no app downloads required.",
       image: "/real-estate.png?height=200&width=400",
       tags: ["NextJs", "ExpressJs", "Groq", "MySql"],
-    },
+    }
     
   ]
 
